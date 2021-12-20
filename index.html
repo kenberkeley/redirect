@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Redirecting...</title>
-</head>
+  <head>
+    <title>Redirecting...</title>
+  </head>
 <body>
-<script>
-  const redirectURL = new URLSearchParams(location.search).get('redirectURL')
-  if (redirectURL) {
-    location.href = redirectURL
-  } else {
-    location.href = 'https://www.sportsbet.com.au' // fallback
-  }
-</script>
+  <script>
+    location.href = new URLSearchParams(location.search).get('url') || 'https://www.sportsbet.com.au'
+  </script>
 </body>
 </html>
