@@ -5,7 +5,9 @@
   </head>
 <body>
   <script>
-    location.href = new URLSearchParams(location.search).get('url') || 'https://www.sportsbet.com.au'
+    window.confirm("Ready?")
+    const url = new URLSearchParams(location.search).get('url') || 'https://www.sportsbet.com.au'
+    location.assign(url)
   </script>
 </body>
 </html>
